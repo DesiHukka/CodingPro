@@ -21,9 +21,9 @@ const data = [
 ];
 function Programs() {
   return (
-    <div className="w-full flex flex-col gap-8 p-6 bg-slate-200">
+    <div className="w-full flex flex-col md:items-center gap-8 p-6 bg-slate-200">
       {data.map((card) => (
-        <div key={card.id} className="w-full">
+        <div key={card.id} className="lg:my-10">
           <ProgramCard
             title={card.title}
             keywords={card.keywords}

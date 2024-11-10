@@ -32,13 +32,13 @@ const data = [
 
 function HeroStrip() {
   return (
-    <div className="p-6 flex gap-6">
+    <div className="p-6 md:p-10 container md:mx-auto flex max-md:overflow-x-auto gap-6 md:gap-8">
       {data.map((card) => (
         <div
           key={card.id}
-          className="flex gap-4 items-center border-2 border-sky-500 p-2 px-3 rounded-lg"
+          className="flex gap-4  items-center border-2 border-sky-500 p-2 px-3 rounded-lg"
         >
-          <div className="text-2xl text-gray-700">{card.icon}</div>
+          <div className="text-2xl md:text-3xl text-gray-700">{card.icon}</div>
           <div className="flex flex-col gap-1 text-xs text-sky-500 font-medium">
             <span>{card.number}</span>
             <span>{card.name}</span>

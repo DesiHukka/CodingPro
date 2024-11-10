@@ -23,18 +23,21 @@ const data = [
 
 function Hero() {
   return (
-    <div className="flex  gap-2 p-6">
-      <div className="w-1/2 aspect-square overflow-hidden">
+    <div className="container mx-auto flex md:items-center gap-4 lg:gap-8 justify-center p-6 ">
+      <div className="w-1/2 aspect-square lg:aspect-video overflow-hidden">
         <h2 className="mb-4 font-bold text-2xl md:hidden">
           Where The World Learns To Code
         </h2>
-        <img src="applemonitor.jpg" className="object-cover aspect-square" />
+        <img
+          src="applemonitor.jpg"
+          className="object-cover aspect-square lg:aspect-video"
+        />
       </div>
-      <div className="flex flex-1 gap-4 flex-col">
-        <h2 className="font-bold text-xl max-md:hidden">
+      <div className="flex flex-1 gap-8 flex-col">
+        <h2 className="font-bold text-3xl lg:text-5xl max-md:hidden">
           Where The World Learns To Code
         </h2>
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col md:flex-row items-center gap-6">
           {data.map((card) => (
             <div key={card.id}>
               <HeroCard

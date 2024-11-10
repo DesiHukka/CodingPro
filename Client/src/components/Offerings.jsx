@@ -52,14 +52,14 @@ const data = [
 function Offerings() {
   return (
     <div className="bg-neutral-100 p-4">
-      <div className="mt-6 mb-8 text-center font-semibold">
+      <div className="mt-6 mb-8 lg:mb-12 text-center font-semibold lg:text-3xl">
         <h2>Because We Offer What You Need</h2>
         <h2>
           At <span className="text-teal-500">Every Step</span> Of Your
         </h2>
         <h2 className="text-teal-500">Transformative Learning Journey</h2>
       </div>
-      <div className="w-4/5 flex flex-col flex-wrap gap-6 mx-auto">
+      <div className="w-4/5 flex flex-col flex-wrap gap-6 lg:gap-12 items-center mx-auto">
         {data.map((card, idx) => (
           <OfferingCard
             key={card.id}

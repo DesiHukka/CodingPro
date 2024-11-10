@@ -3,7 +3,7 @@ import { FaAngleRight } from "react-icons/fa";
 
 function ProgramCard({ img, title, keywords, description }) {
   return (
-    <div className="w-full bg-white p-2 rounded-lg flex gap-2">
+    <div className="w-full max-w-[700px] bg-white p-2 rounded-lg flex gap-2">
       <div className="flex-1 h-48 overflow-hidden">
         <img src={img} className="object-cover" />
       </div>
