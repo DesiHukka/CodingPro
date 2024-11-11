@@ -22,6 +22,15 @@ const data = [
 function Programs() {
   return (
     <div className="w-full flex flex-col md:items-center gap-8 p-6 bg-slate-200">
+      <div className="mt-6 mb-6 lg:mb-10 text-center font-semibold lg:text-3xl">
+        <h2>
+          Check Out Our <span className="text-teal-500">Holistic Programs</span>{" "}
+          Designed
+        </h2>
+        <h2>
+          To Help You Reach Your <span className="text-teal-500">Goals</span>
+        </h2>
+      </div>
       {data.map((card) => (
         <div key={card.id} className="lg:my-10">
           <ProgramCard

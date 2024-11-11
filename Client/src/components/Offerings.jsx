@@ -59,7 +59,7 @@ function Offerings() {
         </h2>
         <h2 className="text-teal-500">Transformative Learning Journey</h2>
       </div>
-      <div className="w-4/5 flex flex-col flex-wrap gap-6 lg:gap-12 items-center mx-auto">
+      <div className=" flex flex-col flex-wrap gap-6 lg:gap-12 items-center mx-auto">
         {data.map((card, idx) => (
           <OfferingCard
             key={card.id}

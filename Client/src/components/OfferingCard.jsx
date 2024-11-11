@@ -4,7 +4,7 @@ function OfferingCard({ icon, title, description, idx }) {
   return (
     <div
       className={`relative w-80 lg:w-[512px] rounded-lg ${
-        idx % 2 == 0 ? "translate-x-1/2" : "-translate-x-1/2"
+        idx % 2 == 0 ? "md:translate-x-1/2" : "md:-translate-x-1/2"
       } bg-white shadow-md flex flex-col gap-2 lg:gap-4 p-6`}
     >
       <div className="flex items-center gap-2 lg:gap-4">

@@ -3,13 +3,13 @@ import { FaAngleRight } from "react-icons/fa";
 
 function ProgramCard({ img, title, keywords, description }) {
   return (
-    <div className="w-full max-w-[700px] bg-white p-2 rounded-lg flex gap-2">
-      <div className="flex-1 h-48 overflow-hidden">
-        <img src={img} className="object-cover" />
+    <div className="w-full max-w-[700px] bg-white p-2 rounded-lg flex max-sm:flex-col gap-2">
+      <div className="flex-1 max-sm:aspect-video rounded-lg h-48 overflow-hidden">
+        <img src={img} className="object-cover aspect-video rounded-lg" />
       </div>
-      <div className="w-1/2 flex flex-col gap-4 pr-4">
-        <h2 className="font-semibold">{title}</h2>
-        <div className="flex gap-1">
+      <div className="w-1/2 max-sm:w-full flex flex-col gap-4 pr-4">
+        <h2 className="font-semibold line-clamp-1">{title}</h2>
+        <div className="flex gap-1 ">
           {keywords.map((keyword, i) => (
             <span
               className={`pr-2 text-xs ${
