@@ -14,7 +14,7 @@ function Navbar() {
         onClick={toggleSideNav}
         className="md:hidden cursor-pointer text-2xl"
       />
-      <img src="codingpro_logo.png" className="md:w-36 lg:w-48 w-48" />
+      <img src="codingpro_logo.png" className="max-md:w-36 lg:w-48 w-40" />
       <div className="flex md:gap-4 lg:gap-8 max-md:hidden">
         <a href="#" className="hover:text-sky-500">
           About Us
@@ -30,7 +30,7 @@ function Navbar() {
         </a>
       </div>
       <SideNav openSideNav={openSideNav} />
-      <div className="flex md:gap-2 lg:gap-8 gap-8 justify-end">
+      <div className="flex max-md:gap-2 lg:gap-8 gap-4 justify-end">
         <button className="bg-white rounded-lg md:p-1 md:px-2 p-2 px-4 text-sky-500 border border-sky-500">
           Log in
         </button>
